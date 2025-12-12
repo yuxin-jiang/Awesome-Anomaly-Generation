@@ -94,6 +94,7 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 + AnomalyXFusion: Multi-modal Anomaly Synthesis with Diffusion [[2024]](https://arxiv.org/abs/2404.19444)[[data]](https://github.com/hujiecpp/MVTec-Caption)
 + A Novel Approach to Industrial Defect Generation through Blended Latent Diffusion Model with Online Adaptation [[2024]](https://arxiv.org/abs/2402.19330)[[code]](https://github.com/GrandpaXun242/AdaBLDM)
 + AnomalyControl: Learning Cross-modal Semantic Features for Controllable Anomaly Synthesis [[2024]](https://arxiv.org/abs/2412.06510)
++ SeaS: Few-shot Industrial Anomaly Image Generation with Separation and Sharing Fine-tuning [[ICCV 2025]](https://arxiv.org/pdf/2410.14987)[[code]](https://github.com/HUST-SLOW/SeaS)
 + AnoStyler: Text-Driven Localized Anomaly Generation via Lightweight Style Transfer [[AAAI 2026]](https://arxiv.org/abs/2511.06687)[[code]](https://github.com/yulimso/AnoStyler)
 + Anomagic: Crossmodal Prompt-driven Zero-shot Anomaly Generation [[AAAI 2026]](https://arxiv.org/abs/2511.10020)[[code]](https://github.com/yuxin-jiang/Anomagic)
 + AnomalyControl: Highly-Aligned Anomalous Image Generation with Controlled Diffusion Model [[ACM MM 2025]](https://dl.acm.org/doi/abs/10.1145/3746027.3755274)
