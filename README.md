@@ -118,6 +118,7 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 
 + Anodapter: A Unified Framework for Generating Aligned Anomaly Images and Masks Using Diffusion Models [[2025]](https://ieeexplore.ieee.org/document/11000123)
 + Bounding Box-Guided Diffusion for Synthesizing Industrial Images and Segmentation Map [[CVPRW 2025]](https://arxiv.org/abs/2505.03623)[[code]](https://github.com/covisionlab/diffusion_labeling)
++ AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model [[AAAI 2024]](https://ojs.aaai.org/index.php/AAAI/article/view/28696)[[code]](https://github.com/sjtuplayer/anomalydiffusion)
 
 <a id="generation-quality-judgment-and-evaluation-system"></a>
 ## 4. Generation Quality Judgment and Evaluation System
