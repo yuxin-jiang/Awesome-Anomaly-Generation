@@ -10,9 +10,8 @@ Anomaly Generation refers to the synthesis of artificial anomalous data to augme
 To clarify the structure, here's a numbered outline of the categories (major categories are **bolded**; subcategories are indented for easy navigation). Click links to jump to sections.
 
 - **[1. Improving Generation Speed](#improving-generation-speed)**  
-  *(Top-level: Focuses on efficiency enhancements)*
   
-- **[2. Controllable Image Generation](#controllable-image-generation)** *(Major Category: Core methods for targeted synthesis)*
+- **[2. Controllable Image Generation](#controllable-image-generation)**
   - [2.1 CutPaste Method Generation](#cutpaste-method-generation)  
   - [2.2 GAN Generation](#gan-generation)  
   - [2.3 Diffusion Generation](#diffusion-generation)  
@@ -24,11 +23,8 @@ To clarify the structure, here's a numbered outline of the categories (major cat
   - [2.4 Feature-level Anomaly Generation](#feature-level-generation)  
 
 - **[3. Precise Mask](#precise-mask)**  
-  *(Top-level: Focuses on localization accuracy)*
   
 - **[4. Generation Quality Judgment and Evaluation System](#generation-quality-judgment-and-evaluation-system)**  
-  *(Top-level: Focuses on metrics and benchmarking)*
-
 ---
 
 <a id="improving-generation-speed"></a>
