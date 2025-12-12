@@ -109,8 +109,8 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 ### 2.4 Feature-level Anomaly Generation
 *Feature-level anomaly generation operates in latent or feature spaces to inject anomalies at higher abstractions, allowing for subtle and semantically meaningful defects without direct pixel-level manipulations. This method enhances efficiency, preserves global image consistency, and enables boundary-guided synthesis for more realistic industrial defect simulation.*
 
++ A Unified Anomaly Synthesis Strategy with Gradient Ascent for Few-shot Industrial Anomaly Detection [[ECCV 2024]](https://arxiv.org/abs/2407.09359)[[code]](https://github.com/Chern93/GLASS)
 + Progressive Boundary Guided Anomaly Synthesis for Industrial Anomaly Detection [[TCSVT 2024]](https://ieeexplore.ieee.org/document/10716437)[[code]](https://github.com/cqylunlun/PBAS)
-
 ---
 
 <a id="precise-mask"></a>
