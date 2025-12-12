@@ -92,6 +92,8 @@ Robust evaluation metrics quantify synthetic data's fidelity, diversity, and uti
 
 + ASBench: Image Anomalies Synthesis Benchmark for Anomaly Detection [[2025]](https://arxiv.org/abs/2510.07927)
 
+
 ## 💌 Acknowledgement
-We also acknowledge the [Awesome Industrial Anomaly Detection](https://github.com/M-3LAB/awesome-industrial-anomaly-detection) 
-Big thanks to these amazing open-source works!
+We acknowledge the [Awesome Industrial Anomaly Detection](https://github.com/M-3LAB/awesome-industrial-anomaly-detection) repository for its comprehensive paper list and datasets on industrial image anomaly/defect detection.
+
+Big thanks to this amazing open-source work!
