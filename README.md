@@ -2,7 +2,7 @@
 Anomaly Generation refers to the synthesis of artificial anomalous data to augment scarce real-world defect samples in industrial settings. This technique addresses the fundamental challenge of data imbalance in anomaly detection, where normal samples vastly outnumber anomalies, hindering model training.
 
 ### Why Anomaly Generation Matters
-- **Academic Value**: It advances unsupervised and few-shot learning paradigms by providing diverse, controllable synthetic data for benchmarking and evaluation. Recent surveys highlight its role in exploring generative models (e.g., diffusion-based) and vision-language integration, fostering innovations in evaluation frameworks and cross-domain generalization [[arXiv 2025]](https://arxiv.org/abs/2502.16412).
+- **Academic Value**: It advances unsupervised and few/zero-shot learning paradigms by providing diverse, controllable synthetic data for benchmarking and evaluation. Recent surveys highlight its role in exploring generative models (e.g., diffusion-based) and vision-language integration, fostering innovations in evaluation frameworks and cross-domain generalization [[arXiv 2025]](https://arxiv.org/abs/2502.16412).
 - **Practical Production Value**: In manufacturing pipelines, it reduces reliance on costly manual labeling, accelerates model training, and improves detection accuracy by simulating rare defects, minimizing downtime and quality control costs.
 - **Applicable Domains**: Widely used in industrial inspection (e.g., semiconductors, automotive parts), medical imaging (e.g., tumor simulation), autonomous driving (e.g., road hazard synthesis), and surveillance (e.g., behavioral anomalies).
 
