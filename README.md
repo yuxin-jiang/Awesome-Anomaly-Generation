@@ -14,8 +14,9 @@ Anomaly Generation refers to the synthesis of artificial anomalous data to augme
   - [Diffusion Generation](#diffusion-generation)
     - [Text-based Generation](#text-based-generation)
     - [Image-based Generation](#image-based-generation)
-    - [Depth-based Generation](#depth-based-generation)
     - [Multi-Modal Generation](#multi-modal-generation)
+      - [Text-Image Multi-Modal](#text-image-multi-modal)
+      - [Image-Depth Multi-Modal](#image-depth-multi-modal)
 - [Precise Mask](#precise-mask)
 - [Generation Quality Judgment and Evaluation System](#generation-quality-judgment-and-evaluation-system)
 
@@ -67,20 +68,24 @@ Image-based generation conditions synthesis on visual cues like masks, bounding 
 + Enhancing Glass Defect Detection with Diffusion Models: Addressing Imbalanced Datasets in Manufacturing Quality Control [[2025]](https://arxiv.org/abs/2505.03134)
 + Anodapter: A Unified Framework for Generating Aligned Anomaly Images and Masks Using Diffusion Models [[2025]](https://ieeexplore.ieee.org/document/11000123)
 
-<a id="depth-based-generation"></a>
-##### Depth-based Generation
-Depth-based generation leverages depth maps alongside RGB images to synthesize 3D-aware anomalies, capturing structural variations like protrusions or dents for more realistic defect simulation. This is key for applications requiring geometric fidelity, such as surface inspection, by integrating depth and edge information to enhance anomaly diversity and alignment without textual guidance.
-+ AnomalyHybrid: A Domain-agnostic Generative Framework for General Anomaly Detection [[CVPR 2025 SyntaGen Workshop]](https://openaccess.thecvf.com/content/CVPR2025W/SyntaGen/papers/Zhao_AnomalyHybrid_A_Domain-agnostic_Generative_Framework_for_General_Anomaly_Detection_CVPRW_2025_paper.pdf)
-
 <a id="multi-modal-generation"></a>
 ##### Multi-Modal Generation
 Multi-modal synthesis integrates data from diverse sources (e.g., RGB + depth + text), capturing richer contextual cues for robust detection in complex scenes. It's vital for handling incomplete or noisy inputs in real-world applications, improving cross-modal fusion and overall system resilience—especially within diffusion frameworks, where modalities can be jointly denoised for coherent anomaly injection.
+
+<a id="text-image-multi-modal"></a>
+###### Text-Image Multi-Modal
+Text-image multi-modal generation combines natural language descriptions with RGB visuals to guide anomaly synthesis, enabling semantically rich and contextually aware defect creation. This fusion enhances controllability and realism by leveraging textual semantics to refine visual outputs, ideal for scenarios blending descriptive prompts with image priors.
 + AnomalyXFusion: Multi-modal Anomaly Synthesis with Diffusion [[2024]](https://arxiv.org/abs/2404.19444)[[data]](https://github.com/hujiecpp/MVTec-Caption)
 + A Novel Approach to Industrial Defect Generation through Blended Latent Diffusion Model with Online Adaptation [[2024]](https://arxiv.org/abs/2402.19330)[[code]](https://github.com/GrandpaXun242/AdaBLDM)
 + AnomalyControl: Learning Cross-modal Semantic Features for Controllable Anomaly Synthesis [[2024]](https://arxiv.org/abs/2412.06510)
 + AnoStyler: Text-Driven Localized Anomaly Generation via Lightweight Style Transfer [[AAAI 2026]](https://arxiv.org/abs/2511.06687)[[code]](https://github.com/yulimso/AnoStyler)
 + Anomagic: Crossmodal Prompt-driven Zero-shot Anomaly Generation [[AAAI 2026]](https://arxiv.org/abs/2511.10020)[[code]](https://github.com/yuxin-jiang/Anomagic)
 + AnomalyControl: Highly-Aligned Anomalous Image Generation with Controlled Diffusion Model [[ACM MM 2025]](https://dl.acm.org/doi/abs/10.1145/3746027.3755274)
+
+<a id="image-depth-multi-modal"></a>
+###### Image-Depth Multi-Modal
+Image-depth multi-modal generation fuses RGB images with depth maps to produce geometrically accurate anomalies, simulating 3D structural defects like deformations or occlusions. This approach is crucial for depth-sensitive industrial applications, ensuring spatial coherence and enhanced detection in 3D-aware environments through joint modality conditioning.
++ AnomalyHybrid: A Domain-agnostic Generative Framework for General Anomaly Detection [[CVPR 2025 SyntaGen Workshop]](https://openaccess.thecvf.com/content/CVPR2025W/SyntaGen/papers/Zhao_AnomalyHybrid_A_Domain-agnostic_Generative_Framework_for_General_Anomaly_Detection_CVPRW_2025_paper.pdf)
 
 <a id="precise-mask"></a>
 ### Precise Mask
