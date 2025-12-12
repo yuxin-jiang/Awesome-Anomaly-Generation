@@ -22,10 +22,10 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 
 - **[2. Precise Mask](#precise-mask)**  
   
-- **[3. Generation Quality Judgment and Evaluation System](#generation-quality-judgment-and-evaluation-system)**  
----
+- **[3. Generation Quality Judgment and Evaluation System](#generation-quality-judgment-and-evaluation-system)**
+
 - **[4. Improving Generation Speed](#improving-generation-speed)**
-- 
+---
 
 <a id="controllable-image-generation"></a>
 ## 1. Controllable Image Generation
