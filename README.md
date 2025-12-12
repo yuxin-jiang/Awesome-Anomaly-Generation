@@ -7,10 +7,9 @@ Anomaly Generation refers to the synthesis of artificial anomalous data to augme
 - **Applicable Domains**: Widely used in industrial inspection (e.g., semiconductors, automotive parts), medical imaging (e.g., tumor simulation), autonomous driving (e.g., road hazard synthesis), and surveillance (e.g., behavioral anomalies).
 
 ### 📋 Hierarchical Subcategories
-To clarify the structure, here's a numbered outline of the categories
+To clarify the structure, here's a numbered outline of the categories.
 
 - **[1. Improving Generation Speed](#improving-generation-speed)**  
-  *(Top-level: Focuses on efficiency enhancements)*
   
 - **[2. Controllable Image Generation](#controllable-image-generation)**
   - [2.1 CutPaste Method Generation](#cutpaste-method-generation)  
