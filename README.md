@@ -9,43 +9,37 @@ Anomaly Generation refers to the synthesis of artificial anomalous data to augme
 ### 📋 Hierarchical Subcategories
 To clarify the structure, here's a numbered outline of the categories (major categories are **bolded**; subcategories are indented for easy navigation). Click links to jump to sections.
 
-- **[1. Improving Generation Speed](#improving-generation-speed)**  
-  
-- **[2. Controllable Image Generation](#controllable-image-generation)**
-  - [2.1 CutPaste Method Generation](#cutpaste-method-generation)  
-  - [2.2 GAN Generation](#gan-generation)  
-  - [2.3 Diffusion Generation](#diffusion-generation)  
-    - [2.3.1 Text-based Generation](#text-based-generation)  
-    - [2.3.2 Image-based Generation](#image-based-generation)  
-    - [2.3.3 Multi-Modal Generation](#multi-modal-generation)  
-      - [2.3.3.1 Text-Image Multi-Modal](#text-image-multi-modal)  
-      - [2.3.3.2 Image-Depth Multi-Modal](#image-depth-multi-modal)  
-  - [2.4 Feature-level Anomaly Generation](#feature-level-generation)  
+- **[1. Controllable Image Generation](#controllable-image-generation)**
+  - [1.1 CutPaste Method Generation](#cutpaste-method-generation)  
+  - [1.2 GAN Generation](#gan-generation)  
+  - [1.3 Diffusion Generation](#diffusion-generation)  
+    - [1.3.1 Text-based Generation](#text-based-generation)  
+    - [1.3.2 Image-based Generation](#image-based-generation)  
+    - [1.3.3 Multi-Modal Generation](#multi-modal-generation)  
+      - [1.3.3.1 Text-Image Multi-Modal](#text-image-multi-modal)  
+      - [1.3.3.2 Image-Depth Multi-Modal](#image-depth-multi-modal)  
+  - [1.4 Feature-level Anomaly Generation](#feature-level-generation)  
 
-- **[3. Precise Mask](#precise-mask)**  
+- **[2. Precise Mask](#precise-mask)**  
   
-- **[4. Generation Quality Judgment and Evaluation System](#generation-quality-judgment-and-evaluation-system)**  
+- **[3. Generation Quality Judgment and Evaluation System](#generation-quality-judgment-and-evaluation-system)**  
 ---
-
-<a id="improving-generation-speed"></a>
-## 1. Improving Generation Speed
-*Enhancing generation speed is crucial for scaling anomaly synthesis to large datasets, enabling real-time augmentation during training and deployment in high-throughput industrial environments. This reduces computational overhead, making diffusion-based methods viable for resource-constrained settings without sacrificing diversity.*
-
-+ SuperSimpleNet: Unifying Unsupervised and Supervised Learning for Fast and Reliable Surface Defect Detection [[ICPR 2024]][[JIMS 2025]](https://link.springer.com/article/10.1007/s10845-025-02680-8)[[code]](https://github.com/blaz-r/SuperSimpleNet/tree/main)
+- **[4. Improving Generation Speed](#improving-generation-speed)**
+- 
 
 <a id="controllable-image-generation"></a>
-## 2. Controllable Image Generation
+## 1. Controllable Image Generation
 *Controllability allows precise specification of anomaly types, locations, and attributes via prompts or priors, ensuring synthetic data aligns with domain-specific needs. This boosts model generalization by simulating targeted scenarios, bridging the gap between generic augmentation and real defect variability.*
 
 <a id="cutpaste-method-generation"></a>
-### 2.1 CutPaste Method Generation
+### 1.1 CutPaste Method Generation
 *CutPaste-inspired methods simulate anomalies through simple patch cutting and pasting from normal images, offering lightweight, label-free augmentation. This is vital for self-supervised anomaly detection, as it mimics realistic defects efficiently without requiring generative models, promoting accessibility in early-stage research and low-resource setups.*
 
 + CutPaste: Self-supervised Learning for Anomaly Detection and Localization [[(OCC)ICCV 2021]](http://arxiv.org/pdf/2104.04015)[[unofficial code]](https://github.com/Runinho/pytorch-cutpaste)
 + Natural Synthetic Anomalies for Self-supervised Anomaly Detection and Localization [[ECCV 2022]](https://arxiv.org/pdf/2109.15222.pdf)[[code]](https://github.com/hmsch/natural-synthetic-anomalies)
 
 <a id="gan-generation"></a>
-### 2.2 GAN Generation
+### 1.2 GAN Generation
 *GAN-based approaches excel in producing high-fidelity, diverse anomalies by adversarially learning defect distributions from limited samples. Their importance lies in handling extreme class imbalance, enabling robust data augmentation for supervised fine-tuning and improving detection in domains like textiles where real defects are rare and varied.*
 
 + Multistage GAN for Fabric Defect Detection [[2019]](https://pubmed.ncbi.nlm.nih.gov/31870985/)
@@ -57,11 +51,11 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 + EID-GAN: Generative Adversarial Nets for Extremely Imbalanced Data Augmentation [[TII 2022]](https://ieeexplore.ieee.org/document/9795891)
 
 <a id="diffusion-generation"></a>
-### 2.3 Diffusion Generation
+### 1.3 Diffusion Generation
 *Diffusion models provide iterative denoising for superior sample quality and flexibility in anomaly synthesis. They are essential for modern controllable generation, allowing fine-grained control over defect attributes and enabling zero/few-shot adaptation, which drives advancements in scalable, high-resolution industrial simulations.*
 
 <a id="text-based-generation"></a>
-#### 2.3.1 Text-based Generation
+#### 1.3.1 Text-based Generation
 *Text-based generation harnesses natural language prompts to specify anomaly types, locations, and attributes, offering intuitive and flexible control for zero-shot synthesis. This approach excels in scenarios requiring semantic guidance without visual exemplars, fostering diverse and semantically coherent anomaly creation through prompt engineering and language model integration in diffusion processes.*
 
 + Component-aware Unsupervised Logical Anomaly Generation for Industrial Anomaly Detection [[2025]](https://arxiv.org/abs/2502.11712)
@@ -71,7 +65,7 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 + AnoStyler: Text-Driven Localized Anomaly Generation via Lightweight Style Transfer [[AAAI 2026]](https://arxiv.org/abs/2511.06687)[[code]](https://github.com/yulimso/AnoStyler)
 
 <a id="image-based-generation"></a>
-#### 2.3.2 Image-based Generation
+#### 1.3.2 Image-based Generation
 *Image-based generation conditions synthesis on visual cues like masks, bounding boxes, or reference images, enabling precise spatial localization and structural fidelity in anomaly placement. It is particularly effective for few-shot adaptation and boundary-aligned defects, enhancing realism in industrial simulations by leveraging existing visual priors to guide diffusion denoising.*
 
 + AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model [[AAAI 2024]](https://ojs.aaai.org/index.php/AAAI/article/view/28696)[[code]](https://github.com/sjtuplayer/anomalydiffusion)
@@ -82,11 +76,11 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 + Anodapter: A Unified Framework for Generating Aligned Anomaly Images and Masks Using Diffusion Models [[2025]](https://ieeexplore.ieee.org/document/11000123)
 
 <a id="multi-modal-generation"></a>
-#### 2.3.3 Multi-Modal Generation
+#### 1.3.3 Multi-Modal Generation
 *Multi-modal synthesis integrates data from diverse sources (e.g., RGB + depth + text), capturing richer contextual cues for robust detection in complex scenes. It's vital for handling incomplete or noisy inputs in real-world applications, improving cross-modal fusion and overall system resilience—especially within diffusion frameworks, where modalities can be jointly denoised for coherent anomaly injection.*
 
 <a id="text-image-multi-modal"></a>
-##### 2.3.3.1 Text-Image Multi-Modal
+##### 1.3.3.1 Text-Image Multi-Modal
 *Text-image multi-modal generation combines natural language descriptions with RGB visuals to guide anomaly synthesis, enabling semantically rich and contextually aware defect creation. This fusion enhances controllability and realism by leveraging textual semantics to refine visual outputs, ideal for scenarios blending descriptive prompts with image priors.*
 
 + AnomalyXFusion: Multi-modal Anomaly Synthesis with Diffusion [[2024]](https://arxiv.org/abs/2404.19444)[[data]](https://github.com/hujiecpp/MVTec-Caption)
@@ -96,13 +90,13 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 + Anomagic: Crossmodal Prompt-driven Zero-shot Anomaly Generation [[AAAI 2026]](https://arxiv.org/abs/2511.10020)[[code]](https://github.com/yuxin-jiang/Anomagic)
 
 <a id="image-depth-multi-modal"></a>
-##### 2.3.3.2 Image-Depth Multi-Modal
+##### 1.3.3.2 Image-Depth Multi-Modal
 *Image-depth multi-modal generation fuses RGB images with depth maps to produce geometrically accurate anomalies, simulating 3D structural defects like deformations or occlusions. This approach is crucial for depth-sensitive industrial applications, ensuring spatial coherence and enhanced detection in 3D-aware environments through joint modality conditioning.*
 
 + AnomalyHybrid: A Domain-agnostic Generative Framework for General Anomaly Detection [[CVPR 2025 SyntaGen Workshop]](https://openaccess.thecvf.com/content/CVPR2025W/SyntaGen/papers/Zhao_AnomalyHybrid_A_Domain-agnostic_Generative_Framework_for_General_Anomaly_Detection_CVPRW_2025_paper.pdf)
 
 <a id="feature-level-generation"></a>
-### 2.4 Feature-level Anomaly Generation
+### 1.4 Feature-level Anomaly Generation
 *Feature-level anomaly generation operates in latent or feature spaces to inject anomalies at higher abstractions, allowing for subtle and semantically meaningful defects without direct pixel-level manipulations. This method enhances efficiency, preserves global image consistency, and enables boundary-guided synthesis for more realistic industrial defect simulation.*
 
 + A Unified Anomaly Synthesis Strategy with Gradient Ascent for Few-shot Industrial Anomaly Detection [[ECCV 2024]](https://arxiv.org/abs/2407.09359)[[code]](https://github.com/Chern93/GLASS)
@@ -110,7 +104,7 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 ---
 
 <a id="precise-mask"></a>
-## 3. Precise Mask
+## 2. Precise Mask
 *Generating pixel-accurate masks ensures anomalies are spatially aligned with defects, facilitating supervised fine-tuning and precise localization. This is essential for pixel-level tasks like segmentation, reducing false positives and enhancing interpretability in downstream detection pipelines.*
 
 + Anodapter: A Unified Framework for Generating Aligned Anomaly Images and Masks Using Diffusion Models [[2025]](https://ieeexplore.ieee.org/document/11000123)
@@ -120,10 +114,14 @@ To clarify the structure, here's a numbered outline of the categories (major cat
 + Anomagic: Crossmodal Prompt-driven Zero-shot Anomaly Generation [[AAAI 2026]](https://arxiv.org/abs/2511.10020)[[code]](https://github.com/yuxin-jiang/Anomagic)
 
 <a id="generation-quality-judgment-and-evaluation-system"></a>
-## 4. Generation Quality Judgment and Evaluation System
+## 3. Generation Quality Judgment and Evaluation System
 *Robust evaluation metrics quantify synthetic data's fidelity, diversity, and utility, preventing domain shifts that degrade detection performance. This subcategory enables standardized benchmarking, guiding method selection and iterative improvements for trustworthy anomaly synthesis.*
 
 + ASBench: Image Anomalies Synthesis Benchmark for Anomaly Detection [[2025]](https://arxiv.org/abs/2510.07927)
+
+<a id="improving-generation-speed"></a>
+## 4. Improving Generation Speed
+*Enhancing generation speed is crucial for scaling anomaly synthesis to large datasets, enabling real-time augmentation during training and deployment in high-throughput industrial environments. This reduces computational overhead, making diffusion-based methods viable for resource-constrained settings without sacrificing diversity.*
 
 ## 💌 Acknowledgement
 We acknowledge the [Awesome Industrial Anomaly Detection](https://github.com/M-3LAB/awesome-industrial-anomaly-detection) repository for its comprehensive paper list and datasets on industrial image anomaly/defect detection.  
