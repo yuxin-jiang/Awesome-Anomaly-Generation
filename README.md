@@ -91,3 +91,7 @@ Generating pixel-accurate masks ensures anomalies are spatially aligned with def
 Robust evaluation metrics quantify synthetic data's fidelity, diversity, and utility, preventing domain shifts that degrade detection performance. This subcategory enables standardized benchmarking, guiding method selection and iterative improvements for trustworthy anomaly synthesis.
 
 + ASBench: Image Anomalies Synthesis Benchmark for Anomaly Detection [[2025]](https://arxiv.org/abs/2510.07927)
+
+## 💌 Acknowledgement
+We also acknowledge the [Awesome Industrial Anomaly Detection](https://github.com/M-3LAB/awesome-industrial-anomaly-detection) 
+Big thanks to these amazing open-source works!
