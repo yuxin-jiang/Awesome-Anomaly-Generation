@@ -12,21 +12,25 @@ Anomaly Generation refers to the synthesis of artificial anomalous data to augme
 - [Precise Mask](#precise-mask)
 - [Generation Quality Judgment and Evaluation System](#generation-quality-judgment-and-evaluation-system)
 
-## Improving Generation Speed {#improving-generation-speed}
+<a id="improving-generation-speed"></a>
+### Improving Generation Speed
 Enhancing generation speed is crucial for scaling anomaly synthesis to large datasets, enabling real-time augmentation during training and deployment in high-throughput industrial environments. This reduces computational overhead, making diffusion-based methods viable for resource-constrained settings without sacrificing diversity.
 
 + SuperSimpleNet: Unifying Unsupervised and Supervised Learning for Fast and Reliable Surface Defect Detection [[ICPR 2024]][[JIMS 2025]](https://link.springer.com/article/10.1007/s10845-025-02680-8)[[code]](https://github.com/blaz-r/SuperSimpleNet/tree/main)
 
-## Controllable Image Generation {#controllable-image-generation}
+<a id="controllable-image-generation"></a>
+### Controllable Image Generation
 Controllability allows precise specification of anomaly types, locations, and attributes via prompts or priors, ensuring synthetic data aligns with domain-specific needs. This boosts model generalization by simulating targeted scenarios, bridging the gap between generic augmentation and real defect variability.
 
-### CutPaste Method Generation {#cutpaste-method-generation}
+<a id="cutpaste-method-generation"></a>
+#### CutPaste Method Generation
 CutPaste-inspired methods simulate anomalies through simple patch cutting and pasting from normal images, offering lightweight, label-free augmentation. This is vital for self-supervised anomaly detection, as it mimics realistic defects efficiently without requiring generative models, promoting accessibility in early-stage research and low-resource setups.
 
 + CutPaste: Self-supervised Learning for Anomaly Detection and Localization [[(OCC)ICCV 2021]](http://arxiv.org/pdf/2104.04015)[[unofficial code]](https://github.com/Runinho/pytorch-cutpaste)
 + Natural Synthetic Anomalies for Self-supervised Anomaly Detection and Localization [[ECCV 2022]](https://arxiv.org/pdf/2109.15222.pdf)[[code]](https://github.com/hmsch/natural-synthetic-anomalies)
 
-### GAN Generation {#gan-generation}
+<a id="gan-generation"></a>
+#### GAN Generation
 GAN-based approaches excel in producing high-fidelity, diverse anomalies by adversarially learning defect distributions from limited samples. Their importance lies in handling extreme class imbalance, enabling robust data augmentation for supervised fine-tuning and improving detection in domains like textiles where real defects are rare and varied.
 
 + Multistage GAN for Fabric Defect Detection [[2019]](https://pubmed.ncbi.nlm.nih.gov/31870985/)
@@ -37,10 +41,12 @@ GAN-based approaches excel in producing high-fidelity, diverse anomalies by adve
 + Defect-GAN: High-fidelity Defect Synthesis for Automated Defect Inspection [[2021]](https://dr.ntu.edu.sg/bitstream/10356/146285/2/WACV_2021_Defect_GAN__Camera_Ready_.pdf)
 + EID-GAN: Generative Adversarial Nets for Extremely Imbalanced Data Augmentation [[TII 2022]](https://ieeexplore.ieee.org/document/9795891)
 
-### Diffusion Generation {#diffusion-generation}
+<a id="diffusion-generation"></a>
+#### Diffusion Generation
 Diffusion models provide iterative denoising for superior sample quality and flexibility in anomaly synthesis. They are essential for modern controllable generation, allowing fine-grained control over defect attributes and enabling zero/few-shot adaptation, which drives advancements in scalable, high-resolution industrial simulations.
 
-#### Multi-Modal Generation {#multi-modal-generation}
+<a id="multi-modal-generation"></a>
+##### Multi-Modal Generation
 Multi-modal synthesis integrates data from diverse sources (e.g., RGB + depth), capturing richer contextual cues for robust detection in complex scenes. It's vital for handling incomplete or noisy inputs in real-world applications, improving cross-modal fusion and overall system resilience—especially within diffusion frameworks, where modalities can be jointly denoised for coherent anomaly injection.
 
 + AnomalyXFusion: Multi-modal Anomaly Synthesis with Diffusion [[2024]](https://arxiv.org/abs/2404.19444)[[data]](https://github.com/hujiecpp/MVTec-Caption)
@@ -61,7 +67,8 @@ Multi-modal synthesis integrates data from diverse sources (e.g., RGB + depth), 
 + Anomagic: Crossmodal Prompt-driven Zero-shot Anomaly Generation [[AAAI 2026]](https://arxiv.org/abs/2511.10020)[[code]](https://github.com/yuxin-jiang/Anomagic)
 + AnomalyControl: Highly-Aligned Anomalous Image Generation with Controlled Diffusion Model [[ACM MM 2025]](https://dl.acm.org/doi/abs/10.1145/3746027.3755274)
 
-## Precise Mask {#precise-mask}
+<a id="precise-mask"></a>
+### Precise Mask
 Generating pixel-accurate masks ensures anomalies are spatially aligned with defects, facilitating supervised fine-tuning and precise localization. This is essential for pixel-level tasks like segmentation, reducing false positives and enhancing interpretability in downstream detection pipelines.
 
 + DeSTSeg: Segmentation Guided Denoising Student-Teacher for Anomaly Detection [[CVPR 2023]](https://arxiv.org/abs/2211.11317)[[code]](https://github.com/apple/ml-destseg)
@@ -70,7 +77,8 @@ Generating pixel-accurate masks ensures anomalies are spatially aligned with def
 + Bounding Box-Guided Diffusion for Synthesizing Industrial Images and Segmentation Map [[CVPRW 2025]](https://arxiv.org/abs/2505.03623)[[code]](https://github.com/covisionlab/diffusion_labeling)
 + DictAS: A Framework for Class-Generalizable Few-Shot Anomaly Segmentation via Dictionary Lookup [[ICCV 2025]](https://www.arxiv.org/abs/2508.13560)[[code]](https://github.com/xiaozhen228/DictAS)
 
-## Generation Quality Judgment and Evaluation System {#generation-quality-judgment-and-evaluation-system}
+<a id="generation-quality-judgment-and-evaluation-system"></a>
+### Generation Quality Judgment and Evaluation System
 Robust evaluation metrics quantify synthetic data's fidelity, diversity, and utility, preventing domain shifts that degrade detection performance. This subcategory enables standardized benchmarking, guiding method selection and iterative improvements for trustworthy anomaly synthesis.
 
 + ASBench: Image Anomalies Synthesis Benchmark for Anomaly Detection [[2025]](https://arxiv.org/abs/2510.07927)
