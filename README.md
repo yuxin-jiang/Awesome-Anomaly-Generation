@@ -102,7 +102,6 @@ To clarify the structure, here's a numbered outline of the categories.
 + Progressive Boundary Guided Anomaly Synthesis for Industrial Anomaly Detection [[TCSVT 2024]](https://ieeexplore.ieee.org/document/10716437)[[code]](https://github.com/cqylunlun/PBAS)
 + Anodapter: A Unified Framework for Generating Aligned Anomaly Images and Masks Using Diffusion Models [[2025]](https://ieeexplore.ieee.org/document/11000123)
 + Bounding Box-Guided Diffusion for Synthesizing Industrial Images and Segmentation Map [[CVPRW 2025]](https://arxiv.org/abs/2505.03623)[[code]](https://github.com/covisionlab/diffusion_labeling)
-+ DictAS: A Framework for Class-Generalizable Few-Shot Anomaly Segmentation via Dictionary Lookup [[ICCV 2025]](https://www.arxiv.org/abs/2508.13560)[[code]](https://github.com/xiaozhen228/DictAS)
 
 <a id="generation-quality-judgment-and-evaluation-system"></a>
 ## 4. Generation Quality Judgment and Evaluation System
